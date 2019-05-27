@@ -1,3 +1,5 @@
+<!--Version 1.2 -->  
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
  xmlns:v="urn:schemas-microsoft-com:vml"
@@ -352,6 +354,10 @@
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, {{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_ratings_count }} ratings</span></td>
 		      </tr>
 
+		      <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_offer_title }}</td>
+      		  </tr>
+
 	{% elif lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_all_vintagaes_ratings_average %}
 
 		      <tr>
@@ -365,6 +371,10 @@
 		      <tr>
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_all_vintagaes_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_all_vintagaes_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, all vintages</span></td>
 		      </tr>
+
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_offer_title }}</td>
+      		  </tr>
 
 	{% else %}
 
@@ -410,6 +420,10 @@
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, {{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_ratings_count }} ratings</span></td>
 		      </tr>
 
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_offer_title }}</td>
+      		  </tr>
+
 	{% elif lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_all_vintagaes_ratings_average %}
 
 		      <tr>
@@ -423,6 +437,9 @@
 		      <tr>
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_all_vintagaes_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_all_vintagaes_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, all vintages</span></td>
 		      </tr>
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_offer_title }}</td>
+      		  </tr>
 
 	{% else %}
 
@@ -487,7 +504,9 @@
 		      <tr>
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, {{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_ratings_count }} ratings</span></td>
 		      </tr>
-
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_offer_title }}</td>
+      		  </tr>
 	{% elif lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_all_vintagaes_ratings_average %}
 
 		      <tr>
@@ -501,6 +520,10 @@
 		      <tr>
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_all_vintagaes_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_all_vintagaes_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, all vintages</span></td>
 		      </tr>
+
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_offer_title }}</td>
+      		  </tr>
 
 	{% else %}
 
@@ -546,6 +569,10 @@
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, {{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_ratings_count }} ratings</span></td>
 		      </tr>
 
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_offer_title }}</td>
+      		  </tr>
+
 	{% elif lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_all_vintagaes_ratings_average %}
 
 		      <tr>
@@ -559,6 +586,10 @@
 		      <tr>
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_all_vintagaes_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_all_vintagaes_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, all vintages</span></td>
 		      </tr>
+
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_offer_title }}</td>
+      		  </tr>
 
 	{% else %}
 
@@ -621,6 +652,10 @@
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, {{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_ratings_count }} ratings</span></td>
 		      </tr>
 
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_offer_title }}</td>
+      		  </tr>
+
 	{% elif lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_all_vintagaes_ratings_average %}
 
 		      <tr>
@@ -634,6 +669,10 @@
 		      <tr>
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_all_vintagaes_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_all_vintagaes_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, all vintages</span></td>
 		      </tr>
+
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_offer_title }}</td>
+      		  </tr>
 
 	{% else %}
 
@@ -680,6 +719,10 @@
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, {{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_ratings_count }} ratings</span></td>
 		      </tr>
 
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_offer_title }}</td>
+      		  </tr>
+
 	{% elif lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_all_vintagaes_ratings_average %}
 
 		      <tr>
@@ -693,6 +736,10 @@
 		      <tr>
 		        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; color:#333333; line-height:21px; -webkit-text-size-adjust:none; padding:10px 0px 10px 0px;"><b>Vivino {% if lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_all_vintagaes_ratings_average %}{{ (lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_all_vintagaes_ratings_average)| round(1) }}{% endif %}</b><span style="color:#999897;">, all vintages</span></td>
 		      </tr>
+
+		       <tr>
+        		<td align="center" style="font-family:  Helvetica, Arial, sans-serif; font-size: 15px; line-height:32px; color:#333333; padding:10px 20px 10px 20px; -webkit-text-size-adjust:none;">{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_offer_title }}</td>
+      		  </tr>
 
 	{% else %}
 
