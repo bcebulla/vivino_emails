@@ -51,6 +51,7 @@
 	
 	table {
 		margin:0px auto;
+		-webkit-font-smoothing: antialiased;
 	}
 	
 	* {font-family: 'Lato', Helvetica, Arial, sans-serif !important;}
@@ -141,7 +142,7 @@
 		}
 		
 		.m1 {
-			background-image:url(https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/image_m1-red.jpg);
+			background-image:url(https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_m_$(header_image).jpg);
 			background-position:center;
 			background-size:600px 100%;
 			height:150px !important;
@@ -208,7 +209,7 @@
           <tr>
             <td><table class="w100pct" style="width:450px;" width="450" border="0" align="left" cellpadding="0" cellspacing="0">
               <tr>
-                <td class="padL30 padR30 center" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#1e1e1e; line-height:18px; -webkit-text-size-adjust:none; padding:0px 0px 0px 0px;">Ofertas Vivino con Portes Gratis | <a style="color:#000001;" href="$(wine_url_1)">Ver en el navegador</a></td>
+                <td class="padL30 padR30 center" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#1e1e1e; line-height:18px; -webkit-text-size-adjust:none; padding:0px 0px 0px 0px;">Ofertas Vivino con Portes Gratis  | <a style="color:#000001;" href="$(wine_url_1)">Ver en el navegador</a></td>
               </tr>
               <tr>
                 <td class="padL30 padR30 center" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#1e1e1e; line-height:22px; -webkit-text-size-adjust:none; padding:0px 0px 0px 0px;">$(preheader)</td>
@@ -233,7 +234,8 @@
           <table  width="100%" border="0" cellspacing="0" cellpadding="0">
              
              <tr>
-                <td bgcolor="#7F2328" class="m1">
+                 {% set background_color = ('https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_1.jpg') %}
+                <td bgcolor="{% if ('https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_$(header_image).jpg') == background_color %}#7F2328{%elif ('https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_$(header_image).jpg') != background_color %}#ebddb1{% else %}#ebddb1{% endif%}" class="m1">
                   
                   
               <table class="w100pct" width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -246,7 +248,7 @@
         <td class="fs24" align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:35px; color:#ffffff; line-height:40px; -webkit-text-size-adjust:none; padding:0px 0px 20px 0px; font-style:italic; font-weight:300;"><a href="$(wine_url_1)" style="text-decoration:none; color:#ffffff;">$(sub_headline)</a></td>
       </tr>
     </table></td>
-    <td width="35%" class="desktop"><a href="$(wine_url_1)"><img src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/image_1-red.jpg" alt="Top wine of the month" width="275" height="290" style="display:block; border:none;margin:0px auto; text-align:center; color:#333333; font-size:15px;"></a></td>
+    <td width="35%" class="desktop"><a href="$(wine_url_1)"><img src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_$(header_image).jpg" alt="" width="275" height="290" style="display:block; border:none;margin:0px auto; text-align:center; color:#333333; font-size:15px;"></a></td>
   </tr>
 </table>
 

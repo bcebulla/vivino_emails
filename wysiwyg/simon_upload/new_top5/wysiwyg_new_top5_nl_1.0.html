@@ -51,6 +51,7 @@
 	
 	table {
 		margin:0px auto;
+		-webkit-font-smoothing: antialiased;
 	}
 	
 	* {font-family: 'Lato', Helvetica, Arial, sans-serif !important;}
@@ -141,7 +142,7 @@
 		}
 		
 		.m1 {
-			background-image:url(https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/image_m1-red.jpg);
+			background-image:url(https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_m_$(header_image).jpg);
 			background-position:center;
 			background-size:600px 100%;
 			height:150px !important;
@@ -208,7 +209,7 @@
           <tr>
             <td><table class="w100pct" style="width:450px;" width="450" border="0" align="left" cellpadding="0" cellspacing="0">
               <tr>
-                <td class="padL30 padR30 center" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#1e1e1e; line-height:18px; -webkit-text-size-adjust:none; padding:0px 0px 0px 0px;">Offerte Vivino | <a style="color:#000001;" href="$(wine_url_1)">Guarda on line</a></td>
+                <td class="padL30 padR30 center" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#1e1e1e; line-height:18px; -webkit-text-size-adjust:none; padding:0px 0px 0px 0px;">Vivino Aanbiedingen | <a style="color:#000001;" href="$(wine_url_1)">Bekijk online</a></td>
               </tr>
               <tr>
                 <td class="padL30 padR30 center" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#1e1e1e; line-height:22px; -webkit-text-size-adjust:none; padding:0px 0px 0px 0px;">$(preheader)</td>
@@ -233,7 +234,8 @@
           <table  width="100%" border="0" cellspacing="0" cellpadding="0">
              
              <tr>
-                <td bgcolor="#7F2328" class="m1">
+                 {% set background_color = ('https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_1.jpg') %}
+                <td bgcolor="{% if ('https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_$(header_image).jpg') == background_color %}#7F2328{%elif ('https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_$(header_image).jpg') != background_color %}#ebddb1{% else %}#ebddb1{% endif%}" class="m1">
                   
                   
               <table class="w100pct" width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -246,7 +248,7 @@
         <td class="fs24" align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:35px; color:#ffffff; line-height:40px; -webkit-text-size-adjust:none; padding:0px 0px 20px 0px; font-style:italic; font-weight:300;"><a href="$(wine_url_1)" style="text-decoration:none; color:#ffffff;">$(sub_headline)</a></td>
       </tr>
     </table></td>
-    <td width="35%" class="desktop"><a href="$(wine_url_1)"><img src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/image_1-red.jpg" alt="Top wine of the month" width="275" height="290" style="display:block; border:none;margin:0px auto; text-align:center; color:#333333; font-size:15px;"></a></td>
+    <td width="35%" class="desktop"><a href="$(wine_url_1)"><img src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/header_image_$(header_image).jpg" alt="" width="275" height="290" style="display:block; border:none;margin:0px auto; text-align:center; color:#333333; font-size:15px;"></a></td>
   </tr>
 </table>
 
@@ -347,7 +349,7 @@
                           <tr>
                             <td align="left" class="center padT20" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#ffffff; line-height:40px; -webkit-text-size-adjust:none; padding:15px 0px 0px 0px;"><table border="0" align="left" cellpadding="0" cellspacing="0" class="automargin cta" style="border-collapse: separate !important;">
                               <tr>
-                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_1)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_IT.png"></a></td>
+                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_1)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_NL.png"></a></td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -455,7 +457,7 @@
                           <tr>
                             <td align="left" class="center padT20" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#ffffff; line-height:40px; -webkit-text-size-adjust:none; padding:15px 0px 0px 0px;"><table border="0" align="left" cellpadding="0" cellspacing="0" class="automargin cta" style="border-collapse: separate !important;;">
                               <tr>
-                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_2)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_IT.png"></a></td>
+                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_2)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_NL.png"></a></td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -572,7 +574,7 @@
                           <tr>
                             <td align="left" class="center padT20" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#ffffff; line-height:40px; -webkit-text-size-adjust:none; padding:15px 0px 0px 0px;"><table border="0" align="left" cellpadding="0" cellspacing="0" class="automargin cta" style="border-collapse: separate !important;">
                               <tr>
-                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_3)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_IT.png"></a></td>
+                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_3)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_NL.png"></a></td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -680,7 +682,7 @@
                           <tr>
                             <td align="left" class="center padT20" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#ffffff; line-height:40px; -webkit-text-size-adjust:none; padding:30px 0px 0px 0px;"><table border="0" align="left" cellpadding="0" cellspacing="0" class="automargin cta" style="border-collapse: separate !important;">
                               <tr>
-                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_4)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_IT.png"></a></td>
+                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_4)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_NL.png"></a></td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -796,7 +798,7 @@
                           <tr>
                             <td align="left" class="center padT20" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#ffffff; line-height:40px; -webkit-text-size-adjust:none; padding:15px 0px 0px 0px;"><table border="0" align="left" cellpadding="0" cellspacing="0" class="automargin cta" style="border-collapse: separate !important;">
                               <tr>
-                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_5)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_IT.png"></a></td>
+                                <td align="center" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size: 19px; line-height:25px; color:#ffffff; padding: 12px 0px; vertical-align:middle"><a href="$(wine_url_5)" target="_blank" style="font-family:Arial, Helvetica, sans-serif; letter-spacing: normal;line-height: 100%;text-align: center; display:block;text-decoration: none;color: #ffffff;letter-spacing:1px"><img width="220" src="https://vivino.s3.amazonaws.com/emails/simon/buttons/big/cta_big_NL.png"></a></td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -854,7 +856,7 @@
                                     <td align="center"><img  style="display:block; border:none;margin:0px auto;" src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/icon_feature1.png" width="40" height="55"></td>
                                   </tr>
                                   <tr>
-                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Selezionati direttamente nelle aziende vinicole</td>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">De beste wijnen <br/>voor de beste prijs</td>
                                   </tr>
                                 </table> 
                                 <!--[if (gte mso 9)|(IE)]> </td><td valign="top"> <![endif]-->
@@ -863,7 +865,7 @@
                                     <td align="center"><img  style="display:block; border:none;margin:0px auto;" src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/icon_feature2.png" width="40" height="55"></td>
                                   </tr>
                                   <tr>
-                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Garanzia di soddisfazione al 100%</td>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Gegarandeerd<br/> 100% genieten</td>
                                   </tr>
                                 </table> 
                                 <!--[if (gte mso 9)|(IE)]> </td><td valign="top"> <![endif]-->
@@ -872,7 +874,7 @@
                                     <td align="center"><img  style="display:block; border:none;margin:0px auto;" src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/icon_feature3.png" width="40" height="55"></td>
                                   </tr>
                                   <tr>
-                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Pagamento<br/> sicuro</td>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Veilig & snel<br/> online betalen</td>
                                   </tr>
                                 </table> 
                                 <!--[if (gte mso 9)|(IE)]> </td><td valign="top"> <![endif]-->
@@ -881,7 +883,7 @@
                                     <td align="center"><img  style="display:block; border:none;margin:0px auto;" src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/icon_feature4.png" width="40" height="55"></td>
                                   </tr>
                                   <tr>
-                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Scegli il mix perfetto, acquista da una bottiglia</td>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Per fles te bestellen:<br/> mix & match</td>
                                   </tr>
                                 </table> 
                                 <!--[if (gte mso 9)|(IE)]> </td><td valign="top"> <![endif]-->
@@ -890,7 +892,7 @@
                                     <td align="center"><img  style="display:block; border:none;margin:0px auto;" src="https://vivino.s3.amazonaws.com/emails/simon/creative-deals/top5_onbrand_may2019/icon_feature5.png" width="50" height="55"></td>
                                   </tr>
                                   <tr>
-                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Spedizione gratis per ordini di almeno 6 bottiglie anche miste</td>
+                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:13px; color:#000000; line-height:18px; -webkit-text-size-adjust:none; padding:5px 0px 10px 0px;">Gratis bezorgd vanaf<br/> 6 flessen of 60 euro</td>
                                   </tr>
                                 </table> 
                                 
@@ -943,11 +945,11 @@
               </tr>
             <tr>
               <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; color:#575757; line-height:16px; -webkit-text-size-adjust:none; padding:0px 30px 20px 30px; text-transform:none !important; font-weight:normal !important;"> 
-                <a style="color:#575757" href="https://www.vivino.com/notification_settings/unsubscribe?access_token={{ contact.notifications_token }}&user_id={{ contact.user_id }}&from=offers">Annulla</a> l'iscrizione dalle offerte di Vivino<br/><br/>
+                <a style="color:#575757" href="https://www.vivino.com/notification_settings/unsubscribe?access_token={{ contact.notifications_token }}&user_id={{ contact.user_id }}&from=offers">Afmelden</a> voor Vivino Aanbiedingen<br/><br/>
                 
-               Milioni di persone si affidano a Vivino per scoprire e acquistare il loro vino ideale. <br><br>
+                Miljoenen gebruikers vertrouwen op Vivino. Ontdek ook jouw lievelingswijn en bestel.<br><br>
                 
-                <span class="appleLink"><a href="#" style="text-decoration:none;color:#575757;">Vivino Italy, s.r.l. Via Santa Radegonda 11, 20121, Milano</a></span></td>
+                <span class="appleLink"><a href="#" style="text-decoration:none;color:#575757;">Hoofdkantoor Europa:<br/> Njalsgade 21G, 1. sal, 2300 København S</a></span></td>
               </tr>
             
           </table></td>
