@@ -29,7 +29,7 @@
   }
   
   body {
-	word-break: break-word;
+  word-break: break-word;
     -webkit-text-size-adjust:none;
     -ms-text-size-adjust:none;
   }
@@ -56,10 +56,10 @@
     background-repeat:no-repeat !important;
   }
   
-	table {
-		margin:0px auto;
-		-webkit-font-smoothing: antialiased;
-	}
+  table {
+    margin:0px auto;
+    -webkit-font-smoothing: antialiased;
+  }
   
   
   
@@ -300,7 +300,7 @@
             </tr>
           </table>
           
-          {% set wod = (('$(main_wine_url)' | string).split("price_id=")[1] | string).split("&")[0] %}
+          {% set wod = (('$(perfect_link)' | string).split("price_id=")[1] | string).split("&")[0] %}
 {% if not lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_product_id %}
 {% elif not lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_product_id %}
 {% elif not lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id3].deals_vc_product_id %}
@@ -308,13 +308,13 @@
 
 {% elif lookups.recommended_vintage[contact.email_address].product_id2 == wod %}
             <table style="margin:0px auto;" class="w85pct" width="640" border="0" cellspacing="0" cellpadding="0">
-				<tr>
-					<td align="center" class="padT50" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#ffffff; line-height:25px; -webkit-text-size-adjust:none;  padding:0px 0px 0px 0px;"><img class="w100pct autoh"  src="http://vivino.s3.amazonaws.com/emails/simon/wine-deals/spring/divider.png" width="535" height="30" style="display:block; border:none; margin:0px auto;"></td>
-				</tr>
+        <tr>
+          <td align="center" class="padT50" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#ffffff; line-height:25px; -webkit-text-size-adjust:none;  padding:0px 0px 0px 0px;"><img class="w100pct autoh"  src="http://vivino.s3.amazonaws.com/emails/simon/wine-deals/spring/divider.png" width="535" height="30" style="display:block; border:none; margin:0px auto;"></td>
+        </tr>
 
             <tr>
-				<td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#333333; line-height:25px; -webkit-text-size-adjust:none;  padding:40px 0px 15px 0px;">Flere gode tilbud fra Vivino</td>
-			</tr>
+        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#333333; line-height:25px; -webkit-text-size-adjust:none;  padding:40px 0px 15px 0px;">Flere gode tilbud fra Vivino</td>
+      </tr>
 
 <tr>
 <td align="center" style="padding:20px 0px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -383,8 +383,8 @@
 
 
             <tr>
-				<td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#333333; line-height:25px; -webkit-text-size-adjust:none;  padding:40px 0px 15px 0px;">Flere gode tilbud fra Vivino</td>
-			</tr>
+        <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#333333; line-height:25px; -webkit-text-size-adjust:none;  padding:40px 0px 15px 0px;">Flere gode tilbud fra Vivino</td>
+      </tr>
 
 <tr>
 <td align="center" style="padding:20px 0px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -392,7 +392,7 @@
     <td><table class="w100pct" width="320" border="0" align="left" cellpadding="0" cellspacing="0">
       <tr>
         <td height="335" align="center" style="padding:0px 0px 0px 0px">
-        	<a universal=true href="{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_near_perfect_link }}&prefill_token={{ contact.prefill_token }}&change_ship_to_country_code={{ contact.country_code }}" target="_blank"><img src="{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_bottle_image }}" height="300" style="display:block; border:none; margin:0px auto;" /></a>
+          <a universal=true href="{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_near_perfect_link }}&prefill_token={{ contact.prefill_token }}&change_ship_to_country_code={{ contact.country_code }}" target="_blank"><img src="{{ lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_bottle_image }}" height="300" style="display:block; border:none; margin:0px auto;" /></a>
 
        </td>
       </tr>
@@ -448,14 +448,14 @@
 {% else %}
 
             <table style="margin:0px auto;" class="w85pct" width="640" border="0" cellspacing="0" cellpadding="0">
-				<tr>
-				<td align="center" class="padT50" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#ffffff; line-height:25px; -webkit-text-size-adjust:none;  padding:0px 0px 0px 0px;"><img class="w100pct autoh"  src="http://vivino.s3.amazonaws.com/emails/simon/wine-deals/spring/divider.png" width="535" height="30" style="display:block; border:none; margin:0px auto;"></td>
-				</tr>
+        <tr>
+        <td align="center" class="padT50" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#ffffff; line-height:25px; -webkit-text-size-adjust:none;  padding:0px 0px 0px 0px;"><img class="w100pct autoh"  src="http://vivino.s3.amazonaws.com/emails/simon/wine-deals/spring/divider.png" width="535" height="30" style="display:block; border:none; margin:0px auto;"></td>
+        </tr>
 
 
             <tr>
-			<td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#333333; line-height:25px; -webkit-text-size-adjust:none;  padding:40px 0px 15px 0px;">Flere gode tilbud fra Vivino</td>
-			</tr>
+      <td align="center" class="center" style="font-family: Helvetica, Arial, sans-serif; font-size:23px; color:#333333; line-height:25px; -webkit-text-size-adjust:none;  padding:40px 0px 15px 0px;">Flere gode tilbud fra Vivino</td>
+      </tr>
 
 <tr>
 <td align="center" style="padding:20px 0px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
