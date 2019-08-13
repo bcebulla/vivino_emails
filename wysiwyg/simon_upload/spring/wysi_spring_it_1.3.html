@@ -300,7 +300,7 @@
             </tr>
           </table>
           
-          {% set wod = (('$(main_wine_url)' | string).split("price_id=")[1] | string).split("&")[0] %}
+          {% set wod = (('$(perfect_link)' | string).split("price_id=")[1] | string).split("&")[0] %}
 
 {% if not lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id].deals_vc_product_id %}
 {% elif not lookups.deals_vc_product_catalog[lookups.recommended_vintage[contact.email_address].product_id2].deals_vc_product_id %}
